@@ -52,7 +52,7 @@ table {
 body{    
     width: 1440px;
     margin:0 auto;  
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;  
 }
 
 .container{    
@@ -664,6 +664,252 @@ align-items: center;
 }
 
 
+/*********SECTION-TEAM********/
+
+.secteam{
+    height: 800px;
+    box-sizing: border-box;
+    background-color: white;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divmeetteam{
+    width:84%;
+    height: 79%;
+    
+}
+
+.divteamheader{
+/*
+    width:17%;
+    height: 4%;
+
+    */
+    width:241px;
+    height:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 0 auto;
+    margin-bottom: 105px;
+}
+
+.divteamheader >h3{
+    color:rgba(59,170,254,255);
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left:10px;
+}
+
+.divteamheader  span{
+    border-bottom: 2px solid #b5b5b5;
+}
+
+.divmembers{
+
+    display: grid;
+    
+    
+    grid-template-areas: 'member1 member2'
+                          'member3 member4';
+    grid-gap:44px;
+
+    
+}
+
+.divmember1{
+    grid-area: member1;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+ 
+    background-color: #f5f5f5;
+
+}
+
+.photo{
+ 
+    background-color: gray;
+    width:162px;
+    height:188px;
+    margin-left: 40px;
+    margin-top: -22px;
+
+}
 
 
+.divname{
+    width: 198px;
+    height: 54px;
+    background-color: white;
+    
+    
+    display: flex;
+    align-items: center;    
+    padding-left: 19px;
+    position: relative;   
+
+
+}
+
+.divname >h6{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(119,119,119,255)
+}
+
+/*hover rgba(59,170,254,255)*/
+
+
+
+.divpos{
+    width: 178px;
+    height: 39px;
+    background-color: #E6E6E6;
+    margin-top: -5px;
+    
+
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+}
+
+.divpos >h6{
+    font-weight:500;
+    font-size: 12px;
+    color: rgba(153,153,153,255);
+}
+
+
+.divname:after{
+
+    content: "";
+        width: 171px;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 29px solid white;
+        border-right: 29px solid #f5f5f5;
+
+        z-index: -1;
+
+     /* content: '';
+  position: absolute;  
+  width:198px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  transform-origin:top right;
+  transform: skew(-40deg,0deg);
+  border: 1px solid #f5f5f5;  
+  background-color: white;
+
+  */
+}
+
+
+.divpos:after{
+  content: '';
+  position: absolute;  
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin:top right;
+  transform: skew(-40deg,0deg);
+  border: 2px solid white;
+}
+
+.divmemberdetails{
+  
+    margin-top:22px;
+}
+
+
+.memdesc{
+    font-size: 14px;
+    color:rgba(153,153,153,255);
+    line-height: 1.5em;
+    padding:1.5em;
+}
+.divsocialmedia{
+  
+    display: grid;
+    grid-template-areas: 'facebook twitter googleplus';
+
+    margin-left: 40px;
+    padding : 3px 5px 3px 10px;
+    
+}
+
+.facebook{
+    grid-area: facebook;
+    width:39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter{
+    grid-area: twitter;
+    width:39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleplus{
+    grid-area: googleplus;
+    width:39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divmember2{
+    grid-area: member2;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #f5f5f5;
+    
+}
+
+.divmember3{
+    grid-area: member3;
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+    background-color: #f5f5f5;
+    
+}
+
+.divmember4{
+    grid-area: member4;
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+    background-color: #f5f5f5;
+    
+}
 
