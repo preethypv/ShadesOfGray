@@ -1300,36 +1300,265 @@ align-items: center;
     width:121px;
     font-family: OpenSans;
     font-size: 12px;
-    font-weight: bold;
-    color: white;    
+    font-weight: bold;   
+    color: white; 
     background-color: #555555;
 }
 
 /*******SEC-PRICING**********/
 .secpricing{
-    height:625px;
+    padding: 6em 8.43em;
+}
+
+.pricingcontent{
+
+}
+
+.pricingheader{
+    margin-bottom: 5em;
+}
+
+.pricingheading{
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(59,170,254,255);
+
+    margin-left: .25em;
+}
+
+.pricingheading span{
+    border-bottom: 2px solid #B6B6B6;
 }
 
 .pricingsections{
     display:grid;
     grid-template-areas: 'item1 item2 item3 item4';
+    grid-gap: 1em;
+
+    text-align: center;
+    
 }
 
+.pricingitemwidth{
+    width: 20em; /*280px;*/
+    
+}
+
+.pricingitemalign{
+
+    display: block;
+    box-sizing: border-box;
+    padding-top: 1em;
+}
+
+
+
+.pricingitemheaderandfooterstyle{
+    height: 3em;/*54px;*/
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+.starterheader{
+    
+    background-color: #E6E6E6;
+    color: rgba(255,255,255,255);
+}
+
+.price{
+
+    height: 5.36em; /*75px;*/    
+    background-color: #FAFAFA;
+}
+
+.price span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.serviceodd{
+    height: 3.21em; /*45px;*/
+    background-color: #F5F5F5;
+}
+
+.serviceeven{
+    height: 3.21em; /*45px;*/
+    background-color: #FAFAFA;
+}
+
+.signup{
+    width: 15.56em; /*80px*/
+    background-color: #E6E6E6;
+    color: rgba(119,119,119,255);
+}
+.pricingitemhover:hover .pricingheaderhover{
+    color: rgba(59,170,254,255);
+}
+
+.signup:hover{
+
+    background-color: rgba(59,170,254,255);
+    color: rgba(255,255,255,255);
+}
 .starterpricing{
-    grid-area: item1;
+    
+    grid-area: item1;    
 }
 
 .standardpricing{
-    grid-area: item2;
+    grid-area: item2;    
 }
 
 .businesspricing{
-    grid-area: item3;
+    grid-area: item3;    
 }
 
 .ultimatepricing{
-    grid-area:item4;
+    grid-area:item4;    
 }
+
+.standardheader{
+
+    background-color: #B6B6B6;
+    color: rgba(255,255,255,255);
+}
+
+.businessheader{
+    background-color: #999999;
+    color: rgba(255,255,255,255);
+}
+
+.ultimateheader{
+    background-color: #777777;
+    color: rgba(255,255,255,255);
+}
+
+/*********SEC-FACTS***********/
+.secfacts{
+    width: 100%;
+    
+    padding-bottom: 5.71em; /*80px;*/
+    padding-top: 3.14em; /*44px;*/
+    background-color: #2A2929;
+
+}
+.verticalline{
+    border-left:2px solid white;
+    height: 3.14em; /*44px;*/
+    
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.factsdata{
+    font-family: OpenSans;    
+    color:white;    
+    
+}
+.factsnumber{
+    font-weight: bolder;
+    font-size:24px;
+    line-height: 1.5em;
+
+}
+.factsdesc{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.funimageclient{
+    margin-top: 10px;
+    width: 31px;
+    height: 34px;   
+}
+
+.funimageprojeccts{
+    margin-top: 15px;
+    width: 34px;
+    height: 27px;
+}
+
+.funimagecode{
+    margin-top: 15px;
+    width: 39px;
+    height: 31px;
+}
+
+.funimagecups{
+    margin-top: 15px;
+    width: 40px;
+    height: 31px;
+}
+
+.factsitem{
+    display: flex;
+}
+
+.factsitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1em;
+
+    margin-top: 6.14em; /*86px;*/
+}
+
+.factsheading{
+    font-family: NotoSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.factscontent{
+    margin-left: 23.93em; /*335px;*/
+    margin-right: 23.93em; /*335px;*/
+  
+}
+
+/**********SEC-PARTNERS*******/
+.secpartners{
+    padding-top: 5.64em;
+    padding-bottom: 5.64em;
+}
+
+.partnercontent{
+    margin-left: 8.36em;
+    margin-right: 8.36em;
+    
+}
+
+.partners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.partnerimg{
+    width: 280px;
+    height: 121px;
+
+    background-color: #7A7878;
+}
+
+.partnerheading{
+    font-family: NotoSans;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3ABBFE;
+    padding-bottom: 3px;
+    
+}
+
+.partnerheader{
+    margin-bottom: 3.93em;
+    
+}
+
+.partnerheading span{
+    border-bottom: 2px solid #B6B6B6;
+}
+
 /***********FOOTER************/
 .footer{
     box-sizing: border-box;
