@@ -1811,20 +1811,334 @@ align-items: center;
     font-size: 14px;
 }
 
+/***********Media Queries************/
 
-/************Media Queries*****/
+@media screen and (max-width: 375px) {
+ 
+   .buttondiv button{
+        font-size: 14px;
+        padding: 0 20px;
+   }
+}
+@media screen and (max-width: 900px) {
 
-@media only screen and (max-width: 600px) 
-{
-    .sectfeature,
-    .imgdiv,
-    .secwhy{
-        height: auto;
+    
+
+    body {
+        width: 100%;
     }
 
-    .features{
+    .main-header,    
+    .sectfeature,
+    .secwhy,
+    .what-grid-container,
+    .sechow,
+    .secteam,
+    .secquality,
+    .secportfolio,
+    .secenvironment,
+    .secblog,
+    .sectestimony,
+    .secpricing,
+    .secfacts,
+    .secpartners,
+    .footer{
+        height: auto;
+    }
+    
+        
+
+    img {
+        max-width: 100%;
+    }
+    
+    .main-logo{
+        float:none;
+        margin-left: 10px;
+        padding: 0;
+        display: flex;
+        justify-content: start;
+    }
+
+
+    .navList{
+        display: inline-block;
+        height: auto;
+        float:none;
+        top:0;
+        right:0;
+        margin-top: 10px;
+    }
+
+  /*  .navList ul{
+        display: block;
+    }
+*/
+    .navList ul li{
+        display: block;
+        height: auto;
+    }
+/*    
+    .navList ul li a{
+        display: block;
+    }
+*/
+    .infodiv{
+        margin-top: 10em;
+    }
+    .features {
+        grid-template-columns: 1fr;
+        padding: 50px 15px;
+        grid-gap: 4em;
+        height: auto;
+    }
+    .divfeature {
+        padding: 0 5px;
+        text-align: center;
+    }
+    .divfeatureimg {
+        margin: -37.5px auto 0;
+    }
+
+    .secwhy{
+        grid-template-columns: 1fr;
+    }
+
+    .divwhyleft,
+    .divwhyright{
+        min-height: 150px;
+        
+    }
+
+    .whycontent{
+        padding-top: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .what-grid-container{
+        padding : 10px;
+    }
+
+    .whatcontent{
         width:100%;
+        height: auto;
+        grid-template-areas:
+        'header header'
+        'itema itemb'
+        'itemc itemd'
+        'iteme itemf'
+        'itemg itemh';
+      grid-gap: .5em;
+    }
+    
+    .divhowmain{
+        height: auto;
+        width:100%;
+        margin: 0;
+    }
+
+    .divhowcontent{
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }    
+    
+    
+    .divmeetteam{  
+
+        margin: 0;
+        padding-top:10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .divteamheader{
+        margin-bottom:50px;
+    }
+
+
+    .divmembers{
+        grid-template-areas: 'member1' 
+                             'member2'
+                             'member3'
+                             'member4';
+        grid-gap: 10px;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .divmember4{
+        margin-top: 20px;
+    }
+    .photo{
+        margin-left: 10px;
+    }
+
+    .secquality{
+        margin: 20px 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .computerimg{
+        margin-left: 0;
+    }
+    .qualitycontentslope{
+        height: auto;
+        border: 0;
+    }
+    .qualitycontent{
+        position: relative;
+        width:100%;
+        padding:10px;
+    }
+    .qualitypara{
+        width:100%;
+    }
+    .qualityheading{
+        margin-top: 1em;
+    }
+
+    .portli{
+        margin-left: 0;
+    }
+
+    .portmenuitem{
+        font-size: 10px;
+        padding-left: .4em;
+        padding-right: .4em;
+    }
+
+    .portfolioitems{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: .25em;
+        width: 100%;
+        
+    }
+
+    .envcontentbg{
+        float:none;
+        padding : 10px;
+        width: 100%;
+    }
+
+    .envcontent{
+        
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .envdesc{
+        max-width: 100%;
+    }
+
+    .envitems{
+        max-width: 100%;
+    }
+
+    .blogcontent{
+        
+        margin-top: 20px;
+    }
+
+    .blogposts{
+        grid-template-areas: 'post1'
+                              'post2'
+                              'post3'
+                              'post4' ;
+        margin-top: 3em;                              
+    }
+
+    .postimg{
+        width: 100%;
+    }
+
+    
+    .testimonycontent{
+        width: calc(100%-20px);
+        margin: 10px;
+    }
+
+    
+
+    .testimony{
         grid-template-columns: 1fr;
         
-    }   
+    }
+    .authorimgmain{
+        display: none;
+    }
+    .authors{
+        display: none;
+    }
+    
+    .testimonyspeech{
+       width: 100%;
+    }
+    .speechbubble{
+        padding-left: 10px;
+        
+    }
+
+    .secpricing{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }    
+    .pricingcontent{
+        margin: 20px 0;
+    }    
+    .pricingheader{
+        margin-bottom: 3em;
+    }    
+    .pricingsections{
+        grid-template-areas: 'item1'
+                              'item2'
+                              'item3'
+                              'item4';
+        margin-left:2.5em;
+        
+    }
+    .factscontent{
+        width: 100%;        
+        margin: 0 10px;
+    }
+
+    .factsitems{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+
+        margin-top: 4em;
+    }
+    .secpartners{
+        width: 100%;
+        margin: 20px 10px;
+        padding: 0;
+    }
+
+    .partnercontent{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .partnerheader{
+        margin: 1em;
+    }
+    .partners{
+        grid-template-columns: 1fr;
+        width: calc(100%-20px);
+        margin: 0 1.5em;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+    .footermaincontent {
+        grid-template-columns: 1fr;
+    }
+    
+    .footermaincontent > div {
+        grid-column: auto;
+    }
+
+   
 }
