@@ -140,6 +140,46 @@ table {
 
 /******NAVIGATION********/
 
+
+
+.main-menu{
+    display: none;
+}
+
+
+.mobilemenu{
+    display: none;
+    float: right;            
+    margin-top: -40px;
+
+    min-height: 107px;
+    
+}
+
+
+.mobilemenu a.icon {
+    
+    color: #555555;
+    margin-right: 30px; 
+    visibility: visible;
+  }
+
+  .main-menu{      
+      overflow: hidden;      
+      top:0;
+      right: 0;
+      min-height: 107px;
+      margin-right: 5px;
+  }
+
+  .main-menu ul li a{
+    text-decoration: none;  
+    font-size: 10px;                
+    color: rgba(153,153,153,255);        
+ 
+}
+
+
 .navList{
     float: right;
     margin-right: 8.2%; /*118px*/
@@ -1184,6 +1224,7 @@ align-items: center;
 #postimg1{
     background-image: url("../images/blogimage1.jpg");
 }
+
 #postimg2{
     background-image: url("../images/blogimage2.jpg");
 }
@@ -1234,13 +1275,35 @@ align-items: center;
 .postfootermore{
     float:right;
 
+    
+}
+.postfootermorevalue{
     font-family: OpenSans;
     font-size: 12px;
     color:rgba(153,153,153,255);
 }
 
-.postfootermore:hover{
+
+.arrow {
+    border: solid rgba(153,153,153,255);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1.5px;
+    margin-bottom: 2px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .postfootermorevalue:hover{
     color: #3ABBFE;
+}
+
+.postfootermorevalue:hover .arrow{
+    border: solid #3ABBFE;
+    border-width: 0 1px 1px 0;
 }
 
 .post2{
@@ -1273,11 +1336,24 @@ align-items: center;
     margin-right: 5px;
 }
 
-/*
-.arrowclass:hover{
-
+.bigarrow{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
 }
-*/
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+.arrowclass:hover .bigarrow{
+    border: solid #3BAAFE;
+    border-width: 0 2px 2px 0;
+}
+
 
 .view{
     float:right;    
@@ -1314,6 +1390,7 @@ align-items: center;
 }
 
 .speechbubble{
+    position: relative;
     background-color: white;
     max-width: 443px;
     box-sizing: border-box;
@@ -1322,6 +1399,20 @@ align-items: center;
     padding-left:35px;
     padding-right:35px;
     padding-bottom:44px;
+}
+.speechbubble:after{
+    content: '';
+    bottom: 2px;
+    right: -70px;
+    position: absolute;
+    border: 0px solid;
+    display: block;
+    width: 70px;
+     height: 60px;
+    background-color: transparent;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    box-shadow: -21px 15px 0px 10px white;
 }
 
 .quoteimg{
@@ -1357,6 +1448,9 @@ align-items: center;
     background-repeat: no-repeat;
     width:299px;
     height: 435px;
+
+    margin-left: -40px;
+    z-index: 10;
 
 }
 
@@ -1819,10 +1913,285 @@ align-items: center;
         font-size: 14px;
         padding: 0 20px;
    }
-}
-@media screen and (max-width: 900px) {
 
+
+}
+
+@media screen and (max-width: 1200px) {    
+
+    body {
+        width: 100%;
+    }
+    .secteam,
+    .secquality,
+    .secblog,
+    .secpricing
+    {
+        height: auto;
+    }
+
+    .secteam{
+        margin: 1.5em 0;
+    }
+
+    .main-logo{
+        margin-left: 5%;
+    }
+    .navList{
+        margin-right: 5%;
+    }
+    .itemheadingstyle{
+        line-height: 1.2em;
+        font-size: 16px;
+    }
+
+    .computerimg{
+        margin-left: 0;
+    }
     
+    .qualitycontent{
+        
+        padding-right: 20px;
+    }
+    .qualityitems{
+        grid-gap: 2em;
+    }
+
+    .envcontent{
+        
+        padding: 0 20px;
+    }
+
+    .envdesc{
+        max-width: 100%;
+        margin: 2em 0;
+    }    
+    .envitems{
+        max-width: 100%;
+    }
+
+    .secblog{
+        margin-top: 1.5em;
+    }
+
+    .blogposts{
+        grid-template-areas: 'post1 post2'
+                             'post3 post4';
+    }
+
+    .postimg{
+        width:100%;
+    }
+
+    .postimg1{
+        object-fit: cover ;
+    }
+
+    .testimonycontent{
+        margin: 0 60px;
+    }
+
+    .speechbubble{
+        width: 90%;
+    }
+
+    .authors{
+        padding-left: 0;
+    }
+    .authorimg{
+        margin-left: 20px;
+    }
+    .secpricing{
+        padding-top: 3em;
+        
+    }
+
+    .pricingcontent{
+        margin-left: 4.5em;
+    }
+
+    .pricingsections{
+        grid-template-areas: 'item1 item2'
+                            'item3 item4';
+        grid-gap: 2em;
+        
+        
+    }
+
+    .secpartners{
+        padding : 3em 0;
+    }
+
+    .partners{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer{
+        padding: 44px 60px;
+    }
+
+} 
+
+@media screen and (max-width: 768px) {    
+
+    body {
+        width: 100%;
+    }    
+
+    .secwhy,
+    .sechow,
+    .secportfolio,
+    .secenvironment,
+    .footer 
+    {
+        height: auto;
+    }
+
+    .navList ul li a{
+        font-size: 12px;
+        margin-left: 1em;
+    }
+    .whyheader{
+        margin-top: 20px ;
+    }
+
+    .whycontent{
+        padding-top: 10px;
+        height: auto;
+        width: 100%;
+    }
+    .whatcontent{
+        width:100%;
+        height: auto;
+        grid-gap: 10px;
+        margin-left: 10px;
+    }
+
+    .whatitempara{
+        font-size: 13px;
+    }
+
+    .divhowmain{        
+        margin: 2em 9em 2em 4em;        
+        width: 100%;
+    }
+
+    .howitemdetails{
+        height: auto;
+        width: 100%;
+    }
+
+    .divhowcontent{
+        grid-gap: 10px;
+    }
+
+    .divmeetteam{
+        width: 100%;
+    }
+    .divteamheader{
+        margin-bottom: 60px;
+    }
+
+    .divmembers{
+        grid-gap: 10px;
+
+    }
+
+    .photo{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .secquality{
+        margin: 1em 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .computerimg{
+        margin: auto;
+    }
+    .qualitycontentslope{
+        height: auto;
+        border: 0;
+    }
+    .qualitycontent{
+        position: relative;
+        width:100%;
+        padding:50px;
+    }
+    .qualitypara{
+        width:100%;
+    }
+    .qualityheading{
+        margin-top: .5em;
+    }
+
+    .secportfolio{
+        margin-top: 20px;
+    }
+
+    .envcontentbg{
+        float:none;
+        padding : 10px;
+        width: 100%;
+    }
+
+    .envcontent{
+        
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .envdesc{
+        max-width: 100%;
+    }
+
+    .envitems{
+        max-width: 100%;
+    }
+
+    .testimony{
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .authors{
+        display: none;
+    }
+
+    .secpricing{
+        padding: 3em;
+    }
+
+    .pricingcontent{
+        margin-left: 3em;
+    }
+
+    .factscontent{
+        margin: 0 auto;
+        padding-left:10px;
+    }
+
+    .footer{
+        padding: 44px 20px;
+    }
+
+    .footermaincontent {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+    
+    .footermaincontent > div {
+        grid-column: auto;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 668px) {    
 
     body {
         width: 100%;
@@ -1844,12 +2213,16 @@ align-items: center;
     .secpartners,
     .footer{
         height: auto;
-    }
-    
+    }  
         
 
     img {
         max-width: 100%;
+    }
+
+    .itemheadingstyle{
+        font-size: 16px;
+        line-height: 1.2em;
     }
     
     .main-logo{
@@ -1860,29 +2233,15 @@ align-items: center;
         justify-content: start;
     }
 
-
     .navList{
-        display: inline-block;
-        height: auto;
-        float:none;
-        top:0;
-        right:0;
-        margin-top: 10px;
+        display: none;
     }
 
-  /*  .navList ul{
-        display: block;
+    .mobilemenu{
+        display: inline-block;
+     
     }
-*/
-    .navList ul li{
-        display: block;
-        height: auto;
-    }
-/*    
-    .navList ul li a{
-        display: block;
-    }
-*/
+    
     .infodiv{
         margin-top: 10em;
     }
@@ -1893,8 +2252,8 @@ align-items: center;
         height: auto;
     }
     .divfeature {
-        padding: 0 5px;
-        text-align: center;
+        padding: 10px;
+        text-align: left;
     }
     .divfeatureimg {
         margin: -37.5px auto 0;
@@ -1911,7 +2270,7 @@ align-items: center;
     }
 
     .whycontent{
-        padding-top: 10px;
+        padding: 10px;
         height: auto;
         width: 100%;
     }
@@ -1930,12 +2289,18 @@ align-items: center;
         'iteme itemf'
         'itemg itemh';
       grid-gap: .5em;
+      margin-top: 1em;
+    }
+
+    .whatitemheading{
+        padding-left: 4px;
     }
     
     .divhowmain{
         height: auto;
         width:100%;
         margin: 0;
+        padding-top: 1em;
     }
 
     .divhowcontent{
@@ -1947,7 +2312,7 @@ align-items: center;
     .divmeetteam{  
 
         margin: 0;
-        padding-top:10px;
+        padding-top:1em;
         width: 100%;
         box-sizing: border-box;
     }
@@ -1975,7 +2340,7 @@ align-items: center;
     }
 
     .secquality{
-        margin: 20px 0px;
+        margin: 1em 0px;
         grid-template-columns: 1fr;
     }
 
@@ -1995,7 +2360,7 @@ align-items: center;
         width:100%;
     }
     .qualityheading{
-        margin-top: 1em;
+        margin-top: .5em;
     }
 
     .portli{
@@ -2037,7 +2402,7 @@ align-items: center;
 
     .blogcontent{
         
-        margin-top: 20px;
+        margin-top: 1em;
     }
 
     .blogposts{
@@ -2085,7 +2450,7 @@ align-items: center;
         padding: 0;
     }    
     .pricingcontent{
-        margin: 20px 0;
+        margin: 1em 0;
     }    
     .pricingheader{
         margin-bottom: 3em;

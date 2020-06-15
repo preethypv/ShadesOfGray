@@ -3,15 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-<!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-<meta name="viewport" content="width=device-width,initial-scale=1"-->
 <title>Shades Of Gray</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
     <div class="container">
-        <header class="main-header" >            
+        <header class="main-header" id="main-header" >            
                 <div class="main-logo centeralign">                    
                    <img src="./images/logo.png"alt="" class="imglogo">
                    <h5 class="appname">SHADES<span>OF</span>GRAY</h5>
@@ -27,7 +26,27 @@
                         <li><a href="#">PAGES</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
-                </nav>            
+                </nav>    
+                <div class="mobilemenu">
+                    <a href="javascript:void(0);" class="icon" id="icon" onclick="displayMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                        <a href="javascript:void(0);" class="icon" id="icon1" onclick="hideMenu()">
+                            <i class="fa fa-close"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">PORTIFOLIO</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PAGES</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>           
         </header>
         <main>
             <section class="imgdiv mainimg">      
@@ -418,7 +437,7 @@
 
             <section class="secquality">                
                 <div class="computerimg verticalalign">
-                    <img src="./images/devices.png" alt="">
+                    <img src="./images/qualityimg.png" alt="">
                 </div>                
                 <div class="qualitycontentslope">
                     <div class="qualitycontent">                        
@@ -579,7 +598,7 @@
                 <div class="envbg">
                     <div class="envcontentbg centeralign">
                         <div class="envcontent">
-                            <h3 class="envheading">BEST WORK ENVIORN<span>MENT<span</h3>
+                            <h3 class="envheading">BEST WORK ENVIORN<span>MENT</span></h3>
                             <p class="envdesc descstyle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exerci tation ullamco laboris nisi ut aliquip ex ea.</p>
@@ -631,7 +650,8 @@
                     </div>
                     <div class="blogposts">
                         <section class="post1">
-                            <div class="postimg" id="postimg1" >                                
+                            <div class="postimg" id="postimg1" >  
+                                                           
                             </div>
                             <header class="postheader">
                                 <h3>WE MAKE THE DIFFERENT AND<br>
@@ -643,8 +663,9 @@
                             <footer class="postfooter">
                                 <p class="postfootertopic">WEB DESIGN</p>
                                 <div class="postfootermore">
-                                    <p class="postfootermorevalue">READ MORE</p>
-                                    <img src="" alt="" class="readmoreimg">
+                                    <p class="postfootermorevalue">READ MORE
+                                        <i class="arrow right"></i><i class="arrow right"></i>
+                                    </p>
                                 </div>
                             </footer>
                         </section>
@@ -661,8 +682,9 @@
                             <footer class="postfooter">
                                 <p class="postfootertopic">WEB DESIGN</p>
                                 <div class="postfootermore">
-                                    <p class="postfootermorevalue">READ MORE</p>
-                                    <img src="" alt="" class="readmoreimg">
+                                    <p class="postfootermorevalue">READ MORE
+                                        <i class="arrow right"></i><i class="arrow right"></i>
+                                    </p>
                                 </div>
                                 
                             </footer>
@@ -681,8 +703,9 @@
                             <footer class="postfooter">
                                 <p class="postfootertopic">WEB DESIGN</p>
                                 <div class="postfootermore">
-                                    <p class="postfootermorevalue">READ MORE</p>
-                                    <img src="" alt="" class="readmoreimg">
+                                    <p class="postfootermorevalue">READ MORE
+                                        <i class="arrow right"></i><i class="arrow right"></i>
+                                    </p>
                                 </div>
                             </footer>
                         </section>
@@ -700,8 +723,9 @@
                             <footer class="postfooter">
                                 <p class="postfootertopic">WEB DESIGN</p>
                                 <div class="postfootermore">
-                                    <p class="postfootermorevalue">READ MORE</p>
-                                    <img src="" alt="" class="readmoreimg">
+                                    <p class="postfootermorevalue">READ MORE
+                                        <i class="arrow right"></i><i class="arrow right"></i>
+                                    </p>
                                 </div>
                             </footer>
                         </section>                    
@@ -709,10 +733,10 @@
                     <div class="blogfooter">
                         <div class="pagination">
                             <div class="arrowclass centeralign">
-                                <img src="./images/leftarrowicon.png" alt="">
+                                <i class="bigarrow left"></i>
                             </div>
                             <div class="arrowclass centeralign">
-                                <img src="./images/rightarrowicon.png" alt="">
+                                <i class="bigarrow right"></i>
                             </div>
                         </div>
 
@@ -740,10 +764,10 @@
                             </p>
                             <div class="pagination">
                                 <div class="arrowclass centeralign">
-                                    <img src="./images/leftarrowicon.png" alt="">
+                                    <i class="bigarrow left"></i>
                                 </div>
                                 <div class="arrowclass centeralign">
-                                    <img src="./images/rightarrowicon.png" alt="">
+                                    <i class="bigarrow right"></i>
                                 </div>
                             </div>                            
                         </div>
@@ -972,11 +996,10 @@
                             <div class="contactdetails">
                                 <input type="text" class="inputelementstyle descstyle" name="name" placeholder="Name">
                                 <input type="email" class="inputelementstyle descstyle" name="email" placeholder="Email">
-                                <textarea name="message"  class="inputmessage inputelementstyle descstyle" cols="1" rows="1" placeholder="Write Your Message Here">
-                                    
-                                </textarea>
-                                <input type="button"  class ="submit"value="SUBMIT">
-                            
+                                <textarea name="message"  class="inputmessage inputelementstyle descstyle" cols="50" rows="4" placeholder="Write Your Message Here"></textarea>                               
+                                
+                                <input type="button"  class ="submit"value="SUBMIT">                               
+
                             </div>
                         </div>
 
@@ -988,6 +1011,46 @@
             
             </footer> 
         </main>
-    </div>  
+    </div> 
+    
+    <script>
+        function displayMenu() {
+          var x = document.getElementById("main-menu");
+          if (x.style.display === "inline-block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "inline-block";
+          }
+
+         var y = document.getElementById("icon");         
+         y.style.visibility = 'hidden';
+
+         var z= document.getElementById("main-header")
+         z.style.height = '125px';
+         
+         
+        }
+
+        function hideMenu(){
+            var y = document.getElementById("icon");
+            if (y.style.visibility === 'visible') {
+                y.style.visibility = 'hidden';
+             } else {
+                 y.style.visibility = 'visible';
+            }
+
+            var x = document.getElementById("main-menu");
+            if (x.style.display === "inline-block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "inline-block";
+            }
+            var z= document.getElementById("main-header")
+            z.style.height = '65px';
+           
+        }
+        
+        </script>
+    
 </body>
 </html>
